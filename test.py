@@ -8,11 +8,11 @@ Created on Wed Nov 16 12:08:54 2016
 import oauth2 as oauth
 import urlparse
 
-consumer_key           = "7724vt213ze2mj"
-consumer_secret        = "GVd9MjBigin3yQhv"
+consumer_key           = "7724vt213ze2m"
+consumer_secret        = "GVd9MjBigin3yQh"
 
-oauth_token        = "df4fdee1-9a37-447d-a51f-7a049a98526f"
-oauth_token_secret = "4d1301e0-4c2a-40a3-9971-8d822ca59acd"
+oauth_token        = "df4fdee1-9a37-447d-a51f-7a049a98526"
+oauth_token_secret = "4d1301e0-4c2a-40a3-9971-8d822ca59ac"
 
 consumer = oauth.Consumer(consumer_key, consumer_secret)
 client = oauth.Client(consumer)
