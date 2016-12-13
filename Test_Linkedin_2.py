@@ -10,8 +10,8 @@ from linkedin.linkedin import (LinkedInAuthentication, LinkedInApplication,
 
 
 if __name__ == '__main__':
-    API_KEY = "7724vt213ze2mj"
-    API_SECRET = "GVd9MjBigin3yQhv"
+    API_KEY = "7724vt213ze2m"
+    API_SECRET = "GVd9MjBigin3yQh"
     RETURN_URL = 'http://localhost:8000/'
     authentication = LinkedInAuthentication(API_KEY, API_SECRET, RETURN_URL,
                                             PERMISSIONS.enums.values())
