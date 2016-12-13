@@ -14,10 +14,10 @@ def TweepyConnect():
 # se connecter à apps.twitter.com et aller dans le menu de l'application en question
 # nom de l'application twitter : 'API familiariser Tweets'
 # Consumer keys and access tokens, used for OAuth
-    consumer_key = 'H7XKrTUW2FhKbe41Qf20AL5VX'
-    consumer_secret = 'eRa1TqE0J26hhqaDyAkztctpdL3wnnNOnnFuJNsusKiGjIAqdh'
-    access_token = '798100114007064576-42y4esKrGwcuJNQ4RvX13a9xw8folJi'
-    access_token_secret = 'tETGgYe7LK5lQvNAxngS2K4cYho8NqNdaEFEsrn8aRilf'
+    consumer_key = 'H7XKrTUW2FhKbe41Qf20AL5V'
+    consumer_secret = 'eRa1TqE0J26hhqaDyAkztctpdL3wnnNOnnFuJNsusKiGjIAqd'
+    access_token = '798100114007064576-42y4esKrGwcuJNQ4RvX13a9xw8folJ'
+    access_token_secret = 'tETGgYe7LK5lQvNAxngS2K4cYho8NqNdaEFEsrn8aRil'
 
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
