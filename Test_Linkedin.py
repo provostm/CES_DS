@@ -8,8 +8,8 @@ Created on Wed Nov 16 11:38:31 2016
 from linkedin import linkedin
 #from linkedin import server
 
-API_KEY = "7724vt213ze2mj"
-API_SECRET = "GVd9MjBigin3yQhv"
+API_KEY = "7724vt213ze2m"
+API_SECRET = "GVd9MjBigin3yQh"
 RETURN_URL = "http://localhost:3000/auth/linkedin/callback"
 authentication = linkedin.LinkedInAuthentication(API_KEY, API_SECRET, RETURN_URL, linkedin.PERMISSIONS.enums.values())
 print authentication.authorization_url
