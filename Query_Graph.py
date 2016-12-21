@@ -21,11 +21,11 @@ def Query_Graph():
     
     # la requête ci dessous compte toutes les relations de retweet tout tweet confondu, cad que si une personne a tweeté 2 fois à propos du 
     # mot clé, on somme les retweets pour ces tweets pour donner un nombre total de rewteets
-    results_Twittos = graph.run("MATCH (n:Twittos)-[r]->(x) RETURN n.name as Screen_name, n.lang as Langue, n.tweet, COUNT(r) as Nb_Relations ORDER BY Nb_Relations DESC")
+    results_Twittos = graph.run("MATCH (n:Twittos)-[r]->(x) RETURN n.name as Screen_name, n.lang as Langue, n.author_location as Lieu, COUNT(r) as Nb_Relations ORDER BY Nb_Relations DESC")
     
     # la requête ci dessous compte le nombre de retweets effectué par un Retweeter quelque soit le tweet, cad qu'on somme tous les retweets de 
     # cet utilisateur pour les tweets sélectionnés sur les mots clés.
-    results_Retweeters = graph.run("MATCH (x)-[r]->(n:Retweeter) RETURN n.name as Screen_name, n.lang as Langue, COUNT(r) as Nb_Relations ORDER BY Nb_Relations DESC")
+    results_Retweeters = graph.run("MATCH (x)-[r]->(n:Retweeter) RETURN n.name as Screen_name, n.lang as Langue, n.author_location as Lieu, COUNT(r) as Nb_Relations ORDER BY Nb_Relations DESC")
     
 
     

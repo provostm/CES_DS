@@ -6,7 +6,6 @@ Created on Thu Dec 08 14:59:41 2016
 """
 #Mes fonctions
 import Connect_tweepy
-#import Read_Tree
 import Query_Graph
 
 #Les librairies de Python
@@ -17,13 +16,13 @@ import tweepy
 from py2neo import Graph, Node, Relationship
 
 
-KEYWORDS= ['"informatica"']
+KEYWORDS= ['neo4j'] #Liste de mots clés, pour avoir une expression exacte, il faut des guilletmets, les mots OR ou AND sont utiles
 RESULT_TYPE="mixed recent popular" # valeurs possibles : mixed, recent, popular
 #GEOCODE = "48.860710, 2.336775"
 #RADIUS = "20km"
-MAXTWEETS=1
+MAXTWEETS=100
 RETWEET_ONLY=True # True pour le graphe sur les retweets, False pour le graphe sur les followers
-LANGUES=['fr', 'en'] # vérifier qu'il est possible de spécifier 2 langues
+LANGUES=['fr'] # Code ISO 639-1 (2 lettres) de la langue, ce paramètre doit être une liste avec 0 ou n éléments
 
 #Paramètres pour le graphe sur les followers
 ENTRY_FOLLOWER=5
